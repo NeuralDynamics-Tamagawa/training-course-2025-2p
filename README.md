@@ -1,4 +1,4 @@
-# training-course-2024-2p
+# training-course-2025-2p
 script to preprocess and analyze two-photon imaging data
 
 ## installation 
@@ -17,18 +17,18 @@ Now run python -m suite2p and you're all set. <br>
 Running the command suite2p --version in the terminal will print the install version of suite2p.
 "
 >
-GUIが起動したら、2光子データのtiffファイルの入ったフォルダーを移し、RUN
 
-### 4. 　解析用レポジトリのインストール　https://github.com/NeuralDynamics-Tamagawa/training-course-2024-2p/
+### 4. 　解析用レポジトリのインストール　https://github.com/NeuralDynamics-Tamagawa/training-course-2025-2p/
 anaconda promptを開き適当なフォルダに移動(e.g. cd C:\Users\User\Desktop)
 `git clone https://github.com/NeuralDynamics-Tamagawa/training-course-2024-2p/` <br>
 
 ### 5. vscodeで上記フォルダーを開く
 Select KernelでPython Environmentを選択 -> Create python environment
-terminalでpip install requirements.txt
+terminalで
+`.venv\Scripts\activate`を実行したのち、`pip install requirements.txt`
 
 ### 6. main.ipynbを実行
-
+(途中でsuite2p GUI内での操作あり）
 
 
 
