@@ -1,17 +1,40 @@
 # training-course-2025-2p
-script to preprocess and analyze two-photon imaging data
+2光子データの前処理の手順についての説明。
 
-## installation 
+## 概要
+2光子の実験で取得されたデータは
 
-### 1. データを適当なフォルダに移す
+channel 1: iGluSnFR3 (green, グルタミン酸インジケーター）
+
+channel 2: jRGECO (red, カルシウムインジケーター）
+
+のフレームを交互に含む.raw形式のファイルで保存されている。
+
+これを適切なchannel情報に分けて.tiff形式で保存し直して、
+suite2p(神経科学者が開発したROI抽出用のソフトウェア）でゆれ補正＋ROI抽出を行い、
+各ROIの輝度変化情報を数値として扱えるようにする。
+
+## Installation 
+
+### 1. 配布された実験データを適当なフォルダに移す
 例えば"C:\Users\User\Desktop"
 
 ### 2. VScodeのインストール
 https://code.visualstudio.com/download
-python及びjupyterの拡張機能もインストールする
 
-### 3. anaconda のインストール https://docs.anaconda.com/anaconda/install/
-### 4. suite2pのインストール https://github.com/MouseLand/suite2p
+python及びjupyterの拡張機能もインストールする
+左側のExtensionsタブを選択してpythonと入力すると候補に挙がるので、installをクリックする。jupyterも同様
+
+![image](https://github.com/user-attachments/assets/fb222193-d6e0-40bb-995e-3436852aed6f)
+
+
+### 3. anaconda のインストール 
+https://docs.anaconda.com/anaconda/install/
+
+（もしくは配布されたデータのなかにAnaconda3-2024.10-1-Windows-x86_64.exeファイルがあるので、これをダブルクリックして実行する）
+
+### 4. suite2pのインストール 
+https://github.com/MouseLand/suite2p
  
 > Open an anaconda prompt / command prompt with conda for python 3 in the path <br>
 Create a new environment with conda create --name suite2p python=3.9. <br>
@@ -37,7 +60,7 @@ ZIPでダウンロードして解凍する
 ### 7. vscodeで上記フォルダーを開く
 Select KernelでPython Environmentを選択 -> Create python environment
 
-### 6. main.ipynbを実行
+### 6. main.ipynbをvscodeで実行
 (途中でsuite2p GUI内での操作あり）
 
 
