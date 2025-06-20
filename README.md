@@ -62,6 +62,7 @@ Select KernelでPython Environmentを選択 -> Create python environment
 
 ### 6. main.ipynbをvscodeで実行
 (途中でsuite2p GUI内での操作あり）
-
+suite2pの推奨パラメーターは以下の通り
+![スクリーンショット 2025-06-19 210855](https://github.com/user-attachments/assets/e816300a-148c-46f8-a5c4-05378178569a)
 
 
